@@ -167,76 +167,91 @@
 
     <button id="startBtn" onclick="startGame()">開始闖關</button>
 
-     <!-- 關卡 2 -->
+    <!-- 關卡 1 -->
     <div class="card" id="card1">
-        <div class="wood-sign">關卡 1｜土地的庇護・福德正殿</div>
-        <p>請至福德正殿，觀察土地公、土地婆的外觀特徵，思考祂們在地方文化中的角色。請依觀察結果回答問題。</p>
-        <p class="question">問題：根據你的觀察，人們通常會向土地公祈求什麼？</p>
+        <div class="wood-sign">關卡 1｜智慧的守護者・文昌帝君殿</div>
+        <p>請移步至文昌帝君廟，查看神龕上方的匾額，注意匾額上題寫的文字與其象徵的品德意涵。
+        請依提示作答，答對才能解鎖下一關。</p>
+        <p>提示：匾額內容通常與文運與德行有關。</p>
+        <p class="question">問題：文昌帝君神龕上方匾額題寫的文字為何？請完整寫出匾額文字。</p>
         <input id="ans1" type="text" placeholder="請輸入你的答案…">
-        <button onclick="checkAnswer('ans1', ['平安','順利','保佑'], 'card2', 'card1')">提交答案</button>
+        <button onclick="checkAnswer('ans1', ['孝友文章'], 'card2', 'card1')">提交答案</button>
         <div class="result" id="ans1-result"></div>
     </div>
 
-    <!-- 你後面關卡 3～final 直接照之前的結構貼上就好 -->
-    <!-- ✦ 關卡 3 -->
+    <!-- ✦ 關卡 2 -->
         <div class="card" id="card2">
-            <div class="wood-sign">關卡 2｜財運之路・財神洞</div>
-            <p>請前往財神洞，找到象徵財神祝福的聚寶盆，觀察其外觀並思考它所代表的意涵。請依觀察結果回答問題。</p>
-            <p class="question">問題：財神洞中的聚寶盆象徵什麼？</p>
+            <div class="wood-sign">關卡 2｜海上的守護・媽祖殿</div>
+            <p>請至媽祖神桌前，觀察神桌下所放置的守護神像，並辨認其象徵角色。
+            請依提示作答，答對才能解鎖下一關。</p>
+            <p>提示：注意神桌正下方的固定小神像。</p>
+            <p class="question">問題：媽祖神桌下方鎮守殿內的守護神是哪一位？請寫出守護神名稱。</p>
             <input id="ans2" type="text" placeholder="請輸入你的答案…">
-            <button onclick="checkAnswer('ans2', ['財','運','福'], 'card3', 'card2')">提交答案</button>
+            <button onclick="checkAnswer('ans2', ['虎爺','虎將軍'], 'card3', 'card2')">提交答案</button>
             <div class="result" id="ans2-result"></div>
         </div>
 
-        <!-- ✦ 關卡 4 -->
+        <!-- ✦ 關卡 3 -->
         <div class="card" id="card3">
             <div class="wood-sign">關卡 3｜天上界・凌霄寶殿</div>
-            <p>請至凌霄寶殿，觀察龍柱或龍的表情、姿態與身體細節，思考龍在傳統文化中的象徵意義。請依觀察結果回答問題。</p>
-            <p class="question">問題：你認為龍的形象象徵什麼力量或精神？</p>
+            <p>請至凌霄寶殿，觀察龍柱或龍的表情、姿態與身體細節，思考龍在傳統文化中的象徵意義。請依觀察結果回答問題。請移步至凌霄寶殿五樓，仔細觀察殿內樑柱上的雕刻圖案，辨識圖中出現的神獸。
+            請依提示作答，答對才能解鎖下一關。</p>
+            <p>提示：天界主殿常以象徵至尊的神獸作為雕刻。</p>
+            <p class="question">問題：凌霄寶殿樑柱上雕刻的動物為何？請寫出神獸名稱。</p>
             <input id="ans3" type="text" placeholder="請輸入你的答案…">
-            <button onclick="checkAnswer('ans3', ['力量','權威','守護'], 'card4', 'card3')">提交答案</button>
+            <button onclick="checkAnswer('ans3', ['龍'], 'card4', 'card3')">提交答案</button>
             <div class="result" id="ans3-result"></div>
         </div>
 
-        <!-- ✦ 關卡 5 -->
+        <!-- ✦ 關卡 4 -->
         <div class="card" id="card4">
-            <div class="wood-sign">關卡 4｜智慧的守護者・文昌帝君</div>
-            <p>請找到文昌帝君，觀察文昌帝君的外型特徵（如手持物、服飾、姿態等），思考祂在信仰中扮演的角色。請依觀察結果回答問題。</p>
-            <p class="question">問題：大家通常會向文昌帝君祈求什麼？</p>
+            <div class="wood-sign">關卡 4｜土地的庇護・福德正殿</div>
+            <p>請移步至福德正殿，觀察土地公神像手中的象徵物，了解祂帶來庇佑與財福的含義。
+            請依提示作答，答對才能解鎖下一關。</p>
+            <p>提示：土地公手持象徵財富與守護的物品。</p>
+            <p class="question">問題：土地公手中的象徵物有哪些？請寫出你觀察到的物件名稱。</p>
             <input id="ans4" type="text" placeholder="請輸入你的答案…">
-            <button onclick="checkAnswer('ans4', ['考試','智慧','學業'], 'card5', 'card4')">提交答案</button>
+            <button onclick="checkAnswer('ans4', ['元寶','拐杖'], 'card5', 'card4')">提交答案</button>
             <div class="result" id="ans4-result"></div>
         </div>
 
-        <!-- ✦ 關卡 6 -->
+        <!-- ✦ 關卡 5 -->
         <div class="card" id="card5">
-            <div class="wood-sign">關卡 5｜海上的守護・媽祖殿</div>
-            <p>請找到媽祖神像，觀察媽祖的服飾、冠帽、手持物或表情，思考媽祖所代表的守護意義。請依觀察結果回答問題。</p>
-            <p class="question">問題：媽祖主要守護哪些人？</p>
+            <div class="wood-sign">關卡 5｜財運之路・財神洞</div>
+            <p>請移步至財神洞，觀察天官大帝手持的卷軸字樣，確認其祈福寓意。
+            請依提示作答，答對才能解鎖下一關。</p>
+            <p>提示：卷軸上的文字為天官最常見的祈福語。</p>
+            <p class="question">問題：天官大帝手中卷軸所書寫的祈福語為何？請寫出卷軸上的字句。</p>
             <input id="ans5" type="text" placeholder="請輸入你的答案…">
-            <button onclick="checkAnswer('ans5', ['漁民','航海','旅人'], 'card6', 'card5')">提交答案</button>
+            <button onclick="checkAnswer('ans5', ['天官賜福'], 'card6', 'card5')">提交答案</button>
             <div class="result" id="ans5-result"></div>
         </div>
 
-        <!-- ✦ 關卡 7 -->
+        <!-- ✦ 關卡 6 -->
         <div class="card" id="card6">
             <div class="wood-sign">關卡 6｜千手千眼・千手觀音</div>
-            <p>請找到千手觀音，觀察千手觀音的手勢、法器或姿態細節，思考眾多手臂象徵的含義。請依觀察結果回答問題。</p>
-            <p class="question">問題：為什麼觀音要有這麼多手？</p>
+            <p>請移步至千手觀音正殿，觀察千手觀音神像所呈現的手數，理解其象徵的救苦救難力量。
+            請依提示作答，答對才能解鎖下一關。</p>
+            <p>提示：此手數為象徵性的固定設計，並非真正的千隻。</p>
+            <p class="question">問題：千手觀音聖像呈現的象徵性手數為多少？寫出實際觀察到的手數</p>
             <input id="ans6" type="text" placeholder="請輸入你的答案…">
-            <button onclick="checkAnswer('ans6', ['幫助','慈悲','救苦救難','救'], 'card7', 'card6')">提交答案</button>
+            <button onclick="checkAnswer('ans6', ['24','24隻'], 'card7', 'card6')">提交答案</button>
             <div class="result" id="ans6-result"></div>
         </div>
-    <!-- 關卡 1 -->
+
+
+    <!-- 關卡 7 -->
     <div class="card" id="card7">
-        <div class="wood-sign">關卡 7｜勇氣起點・三將軍</div>
-        <p>請至延平郡王三將軍廟，觀察三將軍的盔甲與武器，了解武將所代表的形象及展現的品格。請依觀察結果回答問題。</p>
-        <p class="question">問題：從武將的形象來看，你覺得三將軍代表哪些品格？</p>
+        <div class="wood-sign">關卡 7｜勇氣起點・延平郡王三將軍廟</div>
+        <p>請前往三將軍神像前，觀察三位武將的姿態與手持物，找出他們護衛延平郡王的象徵。
+        請依提示作答，答對才能解鎖下一關。</p>
+        <p>提示：武將守護延平郡王，他們的手上必定是作戰用的器物。</p>
+        <p class="question">問題：三將軍手中的武將配備為何？請寫出你觀察到的配備名稱或種類。</p>
         <input id="ans7" type="text" placeholder="請輸入你的答案…">
-        <button onclick="checkAnswer('ans7', ['忠','勇','守護'], 'final', 'card7')">提交答案</button>
+        <button onclick="checkAnswer('ans7', ['刀','劍','槍','武器','兵器'], 'final', 'card7')">提交答案</button>
         <div class="result" id="ans7-result"></div>
     </div>
-
+    
         <!-- ✦ 最終卡片 -->
         <div class="card" id="final">
             <div class="wood-sign">恭喜完成挑戰！</div>
